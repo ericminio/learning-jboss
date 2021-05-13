@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  
+  jboss:
+    build: .
+    image: jboss:ready
+    container_name: jboss
+    volumes:
+      - ./deployments:/opt/jboss/wildfly/standalone/deployments
+    ports: 
+      - 8080:8080
+      - 9990:9990
