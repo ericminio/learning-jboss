@@ -1,0 +1,6 @@
+connect
+version
+module add --name=com.oracle.db --resources=/usr/local/src/oracle/ojdbc6-11.2.0.4.jar --dependencies=javax.api,javax.transaction.api
+/subsystem=datasources/jdbc-driver=ojdbc6:add(driver-name=ojdbc6,driver-module-name=com.oracle.db,driver-class-name=oracle.jdbc.OracleDriver)
+
+/subsystem=datasources:installed-drivers-list

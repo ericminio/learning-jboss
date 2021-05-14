@@ -1,4 +1,0 @@
-connect
-version
-
-module add --name=com.oracle.db --resources=/usr/local/src/oracle/ojdbc6-11.2.0.4.jar --dependencies=javax.api,javax.transaction.api

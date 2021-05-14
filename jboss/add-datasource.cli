@@ -1,0 +1,4 @@
+connect
+data-source add --name=local-database --jndi-name=java:/jdbc/local-database --driver-name=ojdbc6 --connection-url=jdbc:oracle:thin:@oracle:1521:XE --user-name=system --password=oracle
+
+/subsystem=datasources:read-resource(recursive=true)
