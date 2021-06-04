@@ -1,1 +1,1 @@
-# learning-jboss
+Study [actions](.github/workflows)

@@ -1,0 +1,19 @@
+name: demos
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+
+  tests:
+    name: run demos
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Start
+      run: docker-compose up -d
+    - name: Run
+      run: |
+        docker-compose exec -T jboss /usr/local/src/support/ci.sh
