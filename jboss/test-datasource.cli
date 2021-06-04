@@ -1,2 +1,0 @@
-connect
-/subsystem=datasources/data-source=local-database:test-connection-in-pool

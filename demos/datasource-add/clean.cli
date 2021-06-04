@@ -1,0 +1,4 @@
+connect
+
+/subsystem=datasources/data-source=local-database:remove
+reload

@@ -8,4 +8,4 @@ data-source add \
     --user-name=system \
     --password=oracle
 
-/subsystem=datasources:read-resource(recursive=true)
+reload

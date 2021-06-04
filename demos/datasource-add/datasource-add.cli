@@ -1,0 +1,13 @@
+connect
+
+data-source add \
+    --name=local-database \
+    --jndi-name=java:/jdbc/local-database \
+    --driver-name=ojdbc \
+    --connection-url=jdbc:oracle:thin:@oracle:1521:XE \
+    --user-name=system \
+    --password=oracle
+
+reload
+
+/subsystem=datasources/data-source=local-database:read-resource
